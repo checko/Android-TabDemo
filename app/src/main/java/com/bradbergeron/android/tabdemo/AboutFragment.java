@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 
 import us.feras.mdv.MarkdownView;
 
@@ -30,14 +29,6 @@ public class AboutFragment extends Fragment implements SwipeRefreshLayout.OnRefr
                                       R.color.refreshing4);
 
         mMarkdownView = (MarkdownView) view.findViewById(R.id.markdownView);
-        mMarkdownView.setWebViewClient(new WebViewClient() {
-            @Override
-            public boolean shouldOverrideUrlLoading (WebView view, String url) {
-                view.loadUrl(url);
-
-                return true;
-            }
-        });
         mMarkdownView.setWebChromeClient(new WebChromeClient() {
             @Override
             public void onProgressChanged (WebView view, int newProgress) {

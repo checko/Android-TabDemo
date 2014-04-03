@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="refreshing1">#1B1BB3</color>
+    <color name="refreshing2">#8243D6</color>
+    <color name="refreshing3">#FFE800</color>
+    <color name="refreshing4">#FFBF00</color>
+</resources>
